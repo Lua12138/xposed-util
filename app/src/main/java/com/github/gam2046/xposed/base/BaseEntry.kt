@@ -17,7 +17,7 @@ abstract class BaseEntry {
     /**
      * 是否输出调试信息
      */
-    internal var outputDebugInformation = true
+    protected var outputDebugInformation = true
 
     private class LogWrapperBaseMethodHook(val realHook: BaseMethodHook, val outputDebugInformation: Boolean) :
         BaseMethodHook() {
